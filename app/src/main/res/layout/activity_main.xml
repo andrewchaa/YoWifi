@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/WifiStatus"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/wifiStatus" />
+
+    <ToggleButton
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/wifiStatusButton"
+        android:layout_toRightOf="@+id/wifiStatus"
+         />
+
+    <TextView
+        android:text="@string/DisableFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifiStatusButton"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        </Spinner>
+
+</RelativeLayout>
