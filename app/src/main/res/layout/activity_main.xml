@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
+    android:paddingRight="16dp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/wifiStatusLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wifi is "
+        android:text="Your wifi is currently "
         android:textSize="20sp"
         />
 
     <Switch
         android:id="@+id/wifiStatusSwitch"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
         />
 
     <TextView
         android:id="@+id/setTimeLable"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Set"
+        android:text="Turn off the wifi for"
         android:textSize="20sp"
-        android:layout_below="@id/wifiStatusSwitch"
-        android:layout_alignParentLeft="true"
         />
 
     <Spinner
         android:id="@+id/minuteSpinner"
-        android:layout_width="70dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/wifiStatusSwitch"
-        android:layout_alignParentRight="true"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/minuteSpinner"
-        android:layout_alignParentRight="true"
-        android:text="@string/disable_button_text"
+        android:text="Ok"
+        android:layout_gravity="bottom"
         android:onClick="DisableWifi"
         />
-</RelativeLayout>
+</LinearLayout>
